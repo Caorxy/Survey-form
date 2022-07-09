@@ -1,0 +1,139 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("pexels-abdulamid-alfadhly-64296.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1, p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+p {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 1em 0;
+    font-size: 18px;
+}
+
+form{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 35px auto 50px;
+    border-radius: 5px;
+    padding: 1rem 3.5rem;
+}
+
+label {
+    display: block;
+    margin: 15px 0 auto;
+    font-size: 18px;
+}
+
+#text-inputs label{
+    margin: 20px 0 auto;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+textarea {
+    box-sizing: border-box;
+    max-width: 39rem;
+    max-height: 20rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 10rem;
+}
+
+.names, textarea, select {
+    margin: 8px 0 0 0;
+    width: 100%;
+    min-height: 3em;
+    border: 1px solid rgba(203, 200, 200, 0.8);
+    border-radius: 5px;
+}
+
+
+input, textarea {
+    margin: 8px 0 0 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inline {
+    min-width: 1.5em;
+    min-height: 1.5em;
+    margin: 0 1em 0 0;
+    vertical-align: -3.5px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 39rem;
+}
+
+#file:hover {
+    opacity: 0.7;
+}
+
+#file span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#file img {
+    display: flex;
+    max-width: 10em;
+    max-height: 10em;
+    margin: 0 auto;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100%;
+    height: 3rem;
+    max-width: 39rem;
+    background-color: #45ff45;
+    color: black;
+    font-size: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#submit:hover {
+    background-color: #85f585;
+}
+
+input::placeholder, select, option, .names{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}

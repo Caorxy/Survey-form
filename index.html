@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Welcome to our community</h1>
+    <p id="description">Provide some information and join the best platform about everything on the Internet</p>
+
+    <form id="survey-form">
+        <fieldset id="text-inputs">
+            <label>Name<input class="names" type="text" placeholder="Enter your name" name="name" required></label>
+            <label>Login<input class="names" type="text" placeholder="Enter your login" name="login" required></label>
+            <label>Email<input class="names" type="email" placeholder="Enter your Email" name="email" required></label>
+            <label>Age<input class="names" type="number" placeholder="Enter your age" max="120" min="16" name="age"  required></label>
+            <label>Password<input class="names" type="password" minlength="8" placeholder="Enter your password" name="password"  required></label>
+            <label>Choose your favourite coffee<select id="dropdown" required>
+                <option selected disabled>&nbsp;&nbsp;&nbsp;Select an option</option>
+                <option>&nbsp;&nbsp;&nbsp;Black Coffee</option>
+                <option>&nbsp;&nbsp;&nbsp;Flat White</option>
+                <option>&nbsp;&nbsp;&nbsp;Espresso</option>
+                <option>&nbsp;&nbsp;&nbsp;Latte</option>
+                <option>&nbsp;&nbsp;&nbsp;Cappuccino</option>
+                <option>&nbsp;&nbsp;&nbsp;Macchiato</option>
+                <option>&nbsp;&nbsp;&nbsp;Americano</option>
+                <option>&nbsp;&nbsp;&nbsp;Café au Lait</option>
+                <option>&nbsp;&nbsp;&nbsp;Cortado</option>
+                <option>&nbsp;&nbsp;&nbsp;Mocha Latte</option>
+                <option>&nbsp;&nbsp;&nbsp;Red Eye</option>
+                <option>&nbsp;&nbsp;&nbsp;Irish Coffee</option>
+                <option>&nbsp;&nbsp;&nbsp;Other</option>
+                <option>&nbsp;&nbsp;&nbsp;I don't drink coffee</option>
+            </select></label>
+        </fieldset>
+        <fieldset>What fruits do you like?
+            <label><input class="inline" type="checkbox" name="fruits" value="apples"><span>Apples</span></label>
+            <label><input class="inline" type="checkbox" name="fruits" value="bananas"><span>Bananas</span></label>
+            <label><input class="inline" type="checkbox" name="fruits" value="oranges"><span>Oranges</span></label>
+            <label><input class="inline" type="checkbox" name="fruits" value="watermelons"><span>Watermelons</span></label>
+            <label><input class="inline" type="checkbox" name="fruits" value="coconuts"><span>Coconuts</span></label>
+            <label><input class="inline" type="checkbox" name="fruits" value="tangerines"><span>Tangerines</span></label>
+        </fieldset>
+        <fieldset>Choose account type
+            <label><input class="inline" type="radio" value="standard" name="account-type" required><span>Standard account</span></label>
+            <label><input class="inline" type="radio" value="student" name="account-type" required><span>Student account</span></label>
+            <label><input class="inline" type="radio" value="premium" name="account-type" required><span>Premium account</span></label>
+        </fieldset>
+        <fieldset>
+            <label id="file"><span>Add your profile picture</span><input class="names" type="file" accept="image/*" name="profile-picture">
+                <img src="camera.png" alt="camera icon">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Write something about yourself (if you want)<textarea name="bio" placeholder="I like to drink coffee with tangerines..."></textarea></label>
+        </fieldset>
+            <label><input id="submit" type="submit" placeholder="Submit"></label>
+    </form>
+</body>
+
+</html>
